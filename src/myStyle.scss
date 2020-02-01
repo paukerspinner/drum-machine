@@ -1,0 +1,62 @@
+.container {
+	position: relative;
+	display: block;
+	width: 1010px;
+	background: #F8F1E7;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.white-note {
+	position: relative;
+	z-index: 0;
+	display: inline-block;
+	width: 70px;
+	height: 250px;
+	border: solid 1px black;
+	background: white;
+	cursor: grab;
+	&:hover {
+		-webkit-box-shadow: inset 3px -11px 22px 4px rgba(0,0,0,0.4);
+		-moz-box-shadow: inset 3px -11px 22px 4px rgba(0,0,0,0.4);
+		box-shadow: inset 3px -11px 22px 4px rgba(0,0,0,0.4);
+	}
+	&:active {
+		background-color: #9D9D9D;
+	}
+}
+
+.black-note {
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	margin-left: -20px;
+	width: 40px;
+	height: 150px;
+	border: solid 1px black;
+	background: black;
+	cursor: grab;
+	&:hover {
+		-webkit-box-shadow: inset -1px -13px 20px 1px rgba(255,255,255,0.7);
+		-moz-box-shadow: inset -1px -13px 20px 1px rgba(255,255,255,0.7);
+		box-shadow: inset -1px -13px 20px 1px rgba(255,255,255,0.7);
+	}
+	&:active {
+		background-color: #9D9D9D;
+	}
+}
+
+.actived-note {
+	background-color: #9D9D9D;
+}
+
+textarea {
+	display: block;
+	height: 500px;
+	width: 200px;
+	resize: none;
+	margin: 0 auto;
+	background: #89cce0;
+	color: white!important;
+	font-size: 15px;
+}
